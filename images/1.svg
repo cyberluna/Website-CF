@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg data-bbox="0.04 0.18 305.11 184.21" viewBox="0 0 305.33 184.39" xmlns="http://www.w3.org/2000/svg" data-type="ugc">
+    <g>
+        <g>
+            <path fill="none" d="M305.15.79v183.6H.04V.79h305.11z"/>
+            <path d="m178.56 74.43-.23.14v-.14Z"/>
+            <path d="m305.15 80.45-80.28 80.28-3.59-3.58-.46-.47L160 95.83l-15.41-15.38L224.87.18l9.8 9.8L249.72 25Z" stroke-width=".25" stroke-dasharray="4" stroke="#ffffff" stroke-miterlimit="10" fill="none"/>
+            <path d="M46.49 67.55a46.35 46.35 0 1 0 46.34 46.35 46.35 46.35 0 0 0-46.34-46.35Zm0 78.21a31.87 31.87 0 1 1 31.86-31.86 31.87 31.87 0 0 1-31.86 31.86Z" stroke-width=".26" stroke-dasharray="4.09" stroke="#ffffff" stroke-miterlimit="10" fill="none"/>
+            <path d="M202.88 67.55a46.35 46.35 0 1 0 46.35 46.35 46.35 46.35 0 0 0-46.35-46.35Zm0 78.21a31.87 31.87 0 1 1 31.86-31.86 31.87 31.87 0 0 1-31.86 31.86Z" stroke-width=".26" stroke-dasharray="4.09" stroke="#ffffff" stroke-miterlimit="10" fill="none"/>
+            <path d="M124.66 67.55A46.35 46.35 0 1 0 171 113.9a46.35 46.35 0 0 0-46.34-46.35Zm0 78.21a31.87 31.87 0 1 1 31.86-31.86 31.87 31.87 0 0 1-31.86 31.86Z" stroke-width=".26" stroke-dasharray="4.09" stroke="#ffffff" stroke-miterlimit="10" fill="none"/>
+            <path d="M179.29 132.45a57.71 57.71 0 1 1-13.83-59.36 57.35 57.35 0 0 1 13.83 59.36Z" stroke-width=".25" stroke-dasharray="3.99" stroke="#ffffff" stroke-miterlimit="10" fill="none"/>
+            <path stroke-width=".26" stroke-dasharray="4.09" stroke="#ffffff" stroke-miterlimit="10" fill="none" d="M249.24 31.76v128.49H.13V31.76h249.11z"/>
+            <path stroke-width=".25" stroke-dasharray="4" stroke="#ffffff" stroke-miterlimit="10" fill="none" d="m120.77 31.76 76.4 76.4-63.44 63.44"/>
+            <path stroke-width=".25" stroke-dasharray="4" stroke="#ffffff" stroke-miterlimit="10" fill="none" d="m135.59 31.76 42.68 42.68 10.67 10.68 23.05 23.05L182 138.16l-10.28 10.28-22.62 22.62"/>
+            <path stroke-width=".25" stroke-dasharray="4" stroke="#ffffff" stroke-miterlimit="10" fill="none" d="m164.14 171.06 14.39-14.4 2-2"/>
+            <path stroke-width=".25" stroke-dasharray="4" stroke="#ffffff" stroke-miterlimit="10" fill="none" d="m191.44 143.75 35.59-35.58-26.09-26.11-1.66-1.65-10.62-10.63-2.23-2.23-35.8-35.79"/>
+        </g>
+    </g>
+</svg>
