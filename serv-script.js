@@ -91,13 +91,8 @@ $('a[data-slide]').click(function(e) {
 // Ai provided solution
 
 
-$(window).on('scroll', function () {
-  var topOfServices = $('.services').offset().top;
-  var windowScroll = $(window).scrollTop();
-
-  if (windowScroll >= topOfServices) {
-    $('.services').addClass('fixed');
-  } else {
-    $('.services').removeClass('fixed');
-  }
-});
+if (window.pageYOffset >= servicesTop) {
+  services.classList.add("fixed");
+} else {
+  services.classList.remove("fixed");
+}
