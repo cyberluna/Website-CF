@@ -89,10 +89,3 @@ $('a[data-slide]').click(function(e) {
 
 
 // Ai provided solution
-
-
-if (window.pageYOffset >= servicesTop) {
-  services.classList.add("fixed");
-} else {
-  services.classList.remove("fixed");
-}

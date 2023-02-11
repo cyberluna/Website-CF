@@ -585,17 +585,11 @@ unity a set body with style="overflown:none;"
 
 }
 
-.slideshow-text summary, .slideshow-text details {	opacity: 0.7;}
-
 .slick-active a {
 	font-weight: 300!important;
 	opacity: 1!important;
 }
 
-.slick-active details{
-	pointer-events: auto;
-	opacity: 1;
-}
 
 .slideshow-text a:hover {
 	font-weight: 300;
@@ -618,42 +612,6 @@ unity a set body with style="overflown:none;"
 	align-items: flex-start;
 }
 
-/*read more button*/
-details {
-	pointer-events: auto;
-	position: relative;
-	padding-bottom: 1em; /* adjusted to <summary>’s height */
-  }
-  
-  summary {
-	pointer-events: auto;
-	list-style: none;
-	text-align: left;
-	display: grid;
-	height:40px;
-	position: absolute;
-	bottom: 0;
-  }
-
-  summary:hover{font-weight: 400;}
-  
-  summary::after {
-	opacity: 0.7;
-    /*content: "\f078";*/
-	content: "+";
-    font-size: 40px;
-    font-weight: 400;
-    color: var(--bg-color);
-}
-
-  details[open] summary::after {
-	opacity: 1;
-	/*content: "\f077";*/
-	content: "";
-    font-size: 40px;
-    font-weight: 400;
-    color: var(--bg-color);
-}
 
 #scroll-serv {
     position: absolute;
@@ -713,31 +671,6 @@ details {
 }
 .the-most img {  max-width: 100%;}
 
-
-.fixed {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: auto;
-}
-
-
-
-
-/* Orientation portrait */
-@media (orientation: portrait) {
-	#Core-Services{		display: unset!important;	}
-	#Services-showcase{		display: none!important;	}
-  }
-  
-  /* Orientation landscape and square */
-  @media (orientation: landscape), (aspect-ratio: 1/1) {
-	#Core-Services{		display: none!important;	}
-	#Services-showcase{		display: unset!important;	}
-	
-  }
 
 
 
