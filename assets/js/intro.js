@@ -1,3 +1,4 @@
+
 //-----------Magic Intro
 
 const intro = document.querySelector(".intro");
@@ -12,7 +13,7 @@ const controller = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
-  duration: 9000,
+  duration: 8100,
   triggerElement: intro,
   triggerHook: 0
 })
@@ -103,3 +104,4 @@ $(function() {
       }
   });
 });
+

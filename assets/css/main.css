@@ -21,7 +21,6 @@ html, body {
 	max-width: 100%;
 	background-color: white;
 	transition: background-color 1s ease;
-	scroll-snap-type: proximity;
 	scroll-snap-type: y proximity;
 
 }
@@ -204,6 +203,23 @@ p{
 	object-fit: cover;
 }
 
+.intro-video {
+	height: 100vh;
+ }
+ .intro-video video {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+ }
+ .intro-video h2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 60px;
+	color: white;
+	text-shadow: 2px 1px #000000;
+	transform: translate(0%, -50%);
+ }
 
 /*Back to top button*/
 #go-top {
@@ -233,23 +249,30 @@ p{
     z-index: 4001;
     width: auto;
     transition: all 1s;
-	border: solid var(--logo-blue) 2px;
+    border: solid var(--logo-blue) 2px;
     border-radius: 25px;
     text-decoration: none;
     cursor: pointer;
     color: var(--logo-blue);
     padding: 0.6em 0.8em;
     font-size: 1.2em;
-    transition: all 0.3s;
+    transition: all 1s;
     font-weight: 400;
+    animation: pulse 4s ease-in-out infinite;
 }
 
-#get-a-quote:hover{
-	transition: all .5s;
-	transform: scale(1.1);
-	background: var(--logo-blue);
-	color: white;
+@keyframes pulse {
+  0% {    transform: scale(1);  }
+  50% {    transform: scale(1.035);  }
+  100% {    transform: scale(1);  }
 }
+
+#get-a-quote:hover {
+    transition: all .5s;
+    background: var(--logo-blue);
+    color: white;
+}
+
 
 /*Navigation Menu*/
   
@@ -443,11 +466,17 @@ sup {font-size: medium!important;	font-weight:300;}
     width: 80vw;
     height: 100vh;
     align-items: center;
+	overflow: hidden;
 }
 
-/*#model-iframe{
-set style in html
-}*/
+
+/*#model-iframe{set style in html}
+
+//------This is important---------//
+To disapear the scroll bar, go inside the index.html from 
+unity a set body with style="overflown:none;"
+
+*/
 
 
 /*Services section*/
@@ -601,7 +630,6 @@ details {
 	list-style: none;
 	text-align: left;
 	display: grid;
-	align-content: left;
 	height:40px;
 	position: absolute;
 	bottom: 0;
@@ -686,7 +714,14 @@ details {
 .the-most img {  max-width: 100%;}
 
 
-
+.fixed-services {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow-y: scroll;
+  }
+  
 
 
 
@@ -759,7 +794,6 @@ details {
 	width: 40px;
 	height: 40px;
 	border: none;
-	z-index: 10px;
 	cursor: pointer;
 	font-size: 3em;
   }
@@ -816,7 +850,6 @@ details {
 	height: 100%;
 	background-position: center;
 	background-size: cover;
-	background-repeat: none;
 	transition: all 0.8s ease;
   }
   .container-general .gallery-wrap .item:hover {	flex: 20; }
@@ -996,13 +1029,13 @@ details {
 	margin: 0;
 }
 
-#mailto{
+.mailto{
 	color: white;
 	font-family: var(--Site-Font);
 	text-decoration: none;
 }
 
-#mailto:hover{
+.mailto:hover{
 	color: var(--logo-blue);
 }
 
@@ -1048,6 +1081,7 @@ textarea {
   resize:vertical;
 }
 
+
 [type="submit"] {
     width: 25%;
     background: transparent;
@@ -1062,6 +1096,23 @@ textarea {
     margin-top: -4px;
     font-weight: 400;
 }
-[type="submit"]:hover { background:var(--logo-blue); color: white; border: solid white;}
+[type="submit"]:hover { background:var(--logo-blue); color: white; border: solid white 2px;}
   
+
+.swal2-title {
+    color: #FFF;
+}
+
+.swal2-content {
+    color: #333;
+}
+
+.swal2-confirm {
+    background-color: #333;
+    color: #FFF;
+}
+
+
+
+
 /*End contact*/

@@ -18,7 +18,7 @@ $('.slideshow-left').slick({
   vertical: true,
   verticalSwiping: true,
   arrows: false,
-  infinite: true,
+  infinite: false,
   dots: true,
   speed: 1000,
   cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
@@ -62,7 +62,7 @@ $('.slideshow-right .slider').slick({
   swipe: false,
   vertical: true,
   arrows: false,
-  infinite: true,
+  infinite: false,
   speed: 950,
   cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
   initialSlide: maxItems - 1
@@ -71,7 +71,7 @@ $('.slideshow-text').slick({
   swipe: false,
   vertical: true,
   arrows: false,
-  infinite: true,
+  infinite: false,
   speed: 900,
   cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
 });
@@ -90,3 +90,16 @@ $('a[data-slide]').click(function(e) {
 
 // Ai provided solution
 
+
+const servicesGallery = document.querySelector('.services-gallery');
+const mainContent = document.querySelector('.main-content');
+
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset >= servicesGallery.offsetTop) {
+    servicesGallery.style.position = 'fixed';
+    mainContent.style.marginTop = servicesGallery.offsetHeight + 'px';
+  } else {
+    servicesGallery.style.position = 'relative';
+    mainContent.style.marginTop = 0;
+  }
+});
