@@ -89,3 +89,51 @@ $('a[data-slide]').click(function(e) {
 
 
 // Ai provided solution
+var gallery = document.querySelector('.gallery');
+var galleryItems = document.querySelectorAll('.gallery-item');
+
+function handleWheel(e) {
+  // Obter direção da rolagem
+  var delta = e.deltaY || e.detail || e.wheelDelta;
+  // Verificar se a rolagem é para baixo ou para cima
+  if (delta < 0) {
+    // Scroll up
+    // Verificar se já chegou ao topo da galeria
+    if (gallery.scrollTop === 0) {
+      // Desabilitar rolagem da galeria
+      gallery.style.overflowY = 'hidden';
+      // Habilitar rolagem da página
+      window.scrollTo(0, window.scrollY - delta);
+    } else {
+      // Continuar rolagem da galeria
+      gallery.scrollTop += delta;
+    }
+  } else {
+    // Scroll down
+    // Verificar se já chegou ao final da galeria
+    if (gallery.scrollTop + gallery.clientHeight === gallery.scrollHeight) {
+      // Desabilitar rolagem da galeria
+      gallery.style.overflowY = 'hidden';
+      // Habilitar rolagem da página
+      window.scrollTo(0, window.scrollY - delta);
+    } else {
+      // Continuar rolagem da galeria
+      gallery.scrollTop += delta;
+    }
+  }
+}
+
+// Adicionar evento de rolagem à galeria
+gallery.addEventListener('wheel', handleWheel);
+
+// Verificar se houve clique em algum item da galeria
+gallery.addEventListener('click', function(e) {
+  // Obter item clicado
+  var item = e.target.closest('.gallery-item');
+  // Verificar se o item clicado existe
+  if (!item) return;
+  // Habilitar rolagem da galeria
+  gallery.style.overflowY = 'scroll';
+  // Definir posição do item clicado na galeria
+  gallery.scrollTop = item.offsetTop;
+});
